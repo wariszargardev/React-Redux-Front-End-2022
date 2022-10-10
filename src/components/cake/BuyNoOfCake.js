@@ -26,7 +26,7 @@ const BuyNoOfCake = (props) => {
 
 const mapStateToProps = state =>{
     return{
-        cake: state.noOfCakes
+        cake: state.cake.noOfCakes
     }
 }
 
@@ -35,5 +35,4 @@ const mapDisPatchToProps = (dispatch) =>{
         buyCake: (quantity) => dispatch(buyCake(quantity))
     }
 }
-
 export default connect(mapStateToProps, mapDisPatchToProps)(BuyNoOfCake);

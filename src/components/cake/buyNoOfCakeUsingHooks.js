@@ -4,7 +4,7 @@ import {buyCake} from "../../store/action/CakeAction";
 
 const BuyNoOfCakeUsingHooks = () => {
 
-    const cake = useSelector(state => state.noOfCakes)
+    const cake = useSelector(state => state.cake.noOfCakes)
     const dispatch = useDispatch()
 
     const [noOfCake, setCake]= useState(0)
